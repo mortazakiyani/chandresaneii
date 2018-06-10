@@ -13,7 +13,8 @@ module.exports.limiter = (windowM, max) => {
     return new RateLimit({
         windowMs: windowM * 60 * 1000,
         max: max,
-        delayMs: 0
+        delayMs: 5
+        
     })
 }
 
